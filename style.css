@@ -1,3 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary: #6C38CC;
+    --anti-accent: #7C7C8A;
+}
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background: #121214;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+.wrapper{
+    background: #202024;
+    border-radius: 8px;
+    padding: 30px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.logo img{
+    width: 120px;
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.info{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 160%;
+}
+.info input{
+    width: 40px;
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--anti-accent);
+    padding: 5px 10px;
+}
+.info input::-webkit-outer-spin-button,
+.info input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.info input[type='number']{
+    -moz-appearance: textfield;
+}
+.countdown{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.num{
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 160px;
+    line-height: 1;
+    background: #29292E;
+    border-radius: 8px;
+    padding: 40px 16px;
+}
+.dots{
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 160px;
+    color: var(--primary);
+}
+.button{
+    background: var(--primary);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    gap: 10px;
+    padding: 17px;
+    width: 100%;
+    cursor: pointer;
 }
